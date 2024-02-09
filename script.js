@@ -2,6 +2,18 @@ const total = document.getElementById("total");
 const charge = document.getElementById("charge");
 const btn = document.getElementById("btn");
 
+
+// Add event listener to the input field for "keydown" event
+charge.addEventListener("keydown", function (event) {
+    // Check if the pressed key is Enter (key code 13)
+    if (event.key === "Enter") {
+      // Trigger the button click
+      event.preventDefault();
+      btn.click();
+    }
+  });
+
+  
 btn.addEventListener("click", function () {
   // Get the current total value and convert it to a number
   let currentTotal = parseFloat(total.innerHTML) || 0;

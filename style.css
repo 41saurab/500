@@ -66,3 +66,16 @@ input::-webkit-inner-spin-button {
 #btn:hover {
   background-color: rgba(228, 3, 3, 0.9);
 }
+
+@media (max-width: 799px) {
+  h1 {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 499px) {
+  * {
+    width: 100%;
+    font-size: 6vh;
+  }
+}
